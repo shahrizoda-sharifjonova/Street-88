@@ -172,7 +172,7 @@ ul{
     row-gap: 30px;
 }
 .productList__item{
-    max-width: 370px;
+    max-width: 350px;
     width: 100%;
     padding: 15px;
     background: #0C0C0C;
@@ -228,14 +228,17 @@ ul{
 .adress{
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
     color: var(--textColor);
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 .footer__links{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80;
+    margin-bottom: 80px;
 }
 .footer__list{
     display: flex;
@@ -255,4 +258,32 @@ ul{
     font-size: 20px;
     line-height: 23px;
     color: var(--textColor);
+}
+
+.productList__img{
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+.productList__img:before{
+    position: absolute;
+    content: '';
+    background: rgba(105, 207, 23, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.about__img{
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.about__txt{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: var(--textColor);
+    margin-bottom: 30px;
 }
